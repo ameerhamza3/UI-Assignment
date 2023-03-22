@@ -10,37 +10,38 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                                                             
+   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
 
-<!-- Navigation -->
-<div class="Header">
-<nav class="navbar navbar-expand-lg navbar-light  sticky-top">
+<!--   Navigation Using Bootsrap Navbar and Custom HTML and CSS-->
+
+<nav class="navbar navbar-expand-lg navbar-light  sticky-top " style="background-color: #e08991">
 	<div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="img/logo-white.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-		data-target="#navbarNavDropdown">
-	    <span class="navbar-toggler-icon"> </span>
-	    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
        
-	    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#service">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Own Work</a>
+                    <a class="nav-link" href="#recent">Own Work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             
             
@@ -48,11 +49,13 @@
 	</div>
       
 
-	</div>
-   
+	
 </nav>
+<div class="Header">
+<br>
+<br>
 <div class="caption">
-<div class=" welcome text-center"">
+<div class=" welcome text-center">
     <h2 class="display-5">Best Template For Creative Busniess</h1>
     <p class="h6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Rem quae quo sint quam </p>
 
@@ -62,91 +65,117 @@
 </div>
 <br>
 
- <!---Welcome Section -->
- <div class="row welcome text-center">
-    <div class="col-12">
-        <h1 class="display-4">We are best at our work!.</h1>
-    </div>
-    <hr>
-          <div class="col-12">
-            <p class="lead">We are best at our Work!
-                Bootstrap is a free and open-source front-end library with HTML 
-                and CSS based designs
-            </p>
-          </div>
+ <!---Simple Detail Section -->
+ <div class="middle">
+  <div class="work">
+          <h1>
+          WE ARE BEST AT WORK
+          </h1>
+          <P>
+          A meta description is an HTML element that provides a 
+          brief summary of a web page.
+          </P>
+          <div class="row justify-content-center">
+          <hr style="width:20%"> 
         </div>
-
+  </div>
+</div>  
         <hr>
  
 
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-    <div class="row padding">
-       <div class=" col-lg-6">
+<!--- Two Column Section using Bootarap Rows and Columns -->
+<div class="container">
+    <div class="row  ">
+   
+      <div class="col-lg-0">
+      </div>
+       <div class=" col-lg-5 gauche">
          <h2> You can conquere the world</h2>
-         
-         <p> If you have right set of mind and thus you can rule the world.cheers!</p>
+        
+        <div class="colour" >
+          <p style="color:#daa521 "> If you have right set of mind thus you can rule the world.cheers!</p>
+        </div>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officiis corporis ea deleniti nemo doloremque, ex sit eum itaque fugiat ipsa vel ducimus, cumque dolor illo nisi quod dignissimos sed?</p>
-     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, dolores commodi labore ipsa ea numquam? Nemo nesciunt aperiam quis obcaecati officia nostrum, quo, eaque sed praesentium, culpa at voluptas non.</p>
- <br>
- <button type="button" class="btn btn-primary btn-lg"> Learn More-></button>
+    
+      
+     <br>
+     <div class="butt">
+ <button type="button" class="btn btn-primary btn-lg"> Learn More -></i></button>
+
+</div>
  </div>
- <div class="col-lg-6">
+ <div  class="col-lg-5 corps">
      <img src="img/about.jpg" class="img-fluid">
  </div>
-    </div>
+ <div class="col-lg-0">
+</div>
  
  
  </div>
+</div>
+</div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <!--- Three Column Section using Jumbertron and Bootsrap Cards.Rows and Columns used for right and left spacing. -->
  
- <!--- Jumbertron and Card Section-->
- <div class=" jumbotron">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">We are best at Our Service!.</h1>
-        </div>
-        <hr>
-              <div class="col-12">
-                <p class="lead">We are best at our Work!
-                    Bootstrap is a free and open-source front-end library with HTML 
-                    and CSS based designs
-                </p>
+ <div  id="#service" class=" jumbotron">
+  
+    <div class="middle">
+      <div class="work">
+              <h1>
+              WE ARE BEST AT OUR SERVICE.
+              </h1>
+              <P>
+              A meta description is an HTML element that provides a 
+              brief summary of a web page.
+              </P>
+              <div class="row justify-content-center">
+                <hr style="width:20%"> 
               </div>
-            </div>
-    
+      </div>
+    </div>  
             <hr>
-            <div class="container-fluid padding ">
+            
+            <div class="container">
                 <div class="row padding text-center"> 
-                    <div class="col-md-4">
-                      <div class="card">
+                    <div class="  col-md-4 box">
+                      <div class="card border-radius: 40%">
                        
-                        <div class="card-body">
-                            <i class="fa fa-line-chart"></i>
+                        <div class="card-body"> 
+                          <i class="fas fa-chart-line fa-2x" style= "color:#daa521"></i>
+                          <hr style="width:20%"> 
                             <h4 class="card-title"> Chart Align </h4>
-                            <p class="card-text">John is an internet enterpreneur<br> with almost 20 years of expereience</p>
+                          
+                            <p class="card-text">John is an internet <br> enterpreneurwith almost<br>  20 years of expereience</p>
                        
                         </div>
                       </div>
                     </div>
-                      <div class="col-md-4">
-                        <div class="card">
+                      <div class="col-md-4 box">
+                        <div class="card border-radius: 40%">
                          
                           <div class="card-body">
-                            <i class="fa fa-bullhorn"></i>
+                            <i class="fa fa-bullhorn fa-2x" style= "color:#daa521"> </i>
+                            <hr style="width:20%"> 
                               <h4 class="card-title"> Quick Announcement</h4>
-                              <p class="card-text">Phil is an internet enterpreneur<br> with almost 20 years of expereience</p>
+                              <p class="card-text">Phil is an internet<br>  enterpreneurwith almost<br>  20 years of expereience</p>
                         
                           </div>
                         
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
+                    <div class="col-md-4 box">
+                        <div class="card border-radius: 40%">
                           
                           <div class="card-body">
-                            <i class="fa fa-location-arrow"></i>
+                            <i class="fa fa-location-arrow fa-2x"style= "color:#daa521"></i>
+                            <hr style="width:20%"> 
                               <h4 class="card-title"> Mark Location</h4>
-                              <p class="card-text  text-center">Phil is an internet enterpreneur<br> with almost 20 years of expereience</p>
+                              <p class="card-text  text-center">Phil is an internet <br> enterpreneurwith almost<br>  20 years of expereience</p>
                        
                           </div>
                         
@@ -155,39 +184,42 @@
 	
   </div>
 </div>
+<div class="container">
 
-<div class="container-fluid padding ">
     <div class="row padding text-center"> 
-        <div class="col-md-4">
-          <div class="card">
+        <div class="col-md-4 box">
+          <div class="card border-radius: 40%">
            
             <div class="card-body">
-                <i class="fa fa-exclamation-triangle"></i>
+                <i class="fa fa-exclamation-triangle fa-2x" style= "color:#daa521"></i>
+                <hr style="width:20%"> 
                 <h4 class="card-title"> Bug Solution </h4>
-                <p class="card-text">John is an internet enterpreneur<br>with almost 20 years of expereience</p>
+                <p class="card-text">John is an internet <br> enterpreneurwith almost<br>  20 years of expereience</p>
            
             </div>
           </div>
         </div>
-          <div class="col-md-4">
-            <div class="card">
+          <div class="col-md-4 box">
+            <div class="card border-radius: 40%">
              
               <div class="card-body">
-                <i class="fa fa-comments"></i>
-                  <h4 class="card-title"> Fast Communication</h4>
-                  <p class="card-text">Phil is an internet enterpreneur<br> with almost 20 years of expereience</p>
+                <i class="fa fa-comments fa-2x" style= "color:#daa521"></i>
+                <hr style="width:20%"> 
+                  <h4 class="card-title">Fast Communication</h4>
+                  <p class="card-text">John is an internet <br> enterpreneurwith almost<br>  20 years of expereience</p>
             
               </div>
             
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
+        <div class="col-md-4 box">
+            <div class="card border-radius: 40%">
               
               <div class="card-body">
-                <i class="fa fa-paint-brush"></i>
-                  <h4 class="card-title"> CLean Design</h4>
-                  <p class="card-text  text-center">Phil is an internet enterpreneur<br> with almost 20 years of expereience</p>
+                <i class="fa fa-paint-brush fa-2x" style= "color:#daa521"></i>
+                <hr style="width:20%"> 
+                  <h4 class="card-title"> Clean Design</h4>
+                  <p class="card-text">John is an internet <br> enterpreneurwith almost<br>  20 years of expereience</p>
            
               </div>
             
@@ -196,90 +228,41 @@
     
         </div>
     </div>
-</div>
+ </div>
 <!--- welcome -->
-<div class="row welcome text-center">
-    <div class="col-12">
-        <h1 class="display-4">Check out Our Recent Work!.</h1>
-    </div>
-    <hr>
-          <div class="col-12">
-            <p class="lead">We are best at our Work!
-                Bootstrap is a free and open-source front-end library with HTML 
-                and CSS based designs
-            </p>
-          </div>
-        </div>
+<div id="about"  class="recent">
+  <h2>
+    CHECK OUR RECENT WORK
+  </h1>
+  <P>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam facilis vitae quas sapiente modi? Aperiam quos beatae,
+   rerum nobis, totam et nesciunt ex suscipit sint dolore laboriosam. Optio, sequi reiciendis.
+  </P>
+  <div class="row justify-content-center">
+    <hr style="width:20%"> 
+  </div>
+</div> 
+<br>
+<br>
+<!--- Buttons  Sectios-->
 
-
-<!--- Buttons -->
-<div class="container-fluid padding ">
-<div class="d-flex justify-content-center">
-
-<button class=" all">All</button>
-
-<button class="summer">Summer</button>
-
-
-<button class="summer">Winter</button>
-
-
-<button class="summer">Rainy</button>
-
-
-<button class="summer">Spring</button>
-
-
-</div>
+<div class="row justify-content-center">
+<div class="btn-group">
+  <button1>All</button1>
+  <button>Summer</button>
+  <button>Winter</button>
+  <button>Rainy</button>
+  <button>Spring</button>
 </div>
 </div>
 
-<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4">
-      <img class="pic1" src="img/gall1.jpg">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-       <img class="pic1" src="img/gall2.jpg">
-    </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-      <img class="pic1" src="img/gall3.jpg">
-    </div>
-  </div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-        <img class="pic1" src="img/gall4.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-       <img class="pic1" src="img/gall5.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-       <img class="pic1" src="img/gall6.jpg">
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-       <img class="pic1" src="img/gall7.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-        <img class="pic1" src="img/gall8.jpg">
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-6 col-xl-4" >
-        <img class="pic1" src="img/gall9.jpg">
-  </div>
+<br>
+<br>
 
 
+<!--Three Columns Images using float and media QuRIES-->
 
-</div>
-
-
-
-
-
-
-
-
-<div class="row">
+<div id="Service"  class="img_row">
     <div class="img_column">
       <img class="pic1" src="img/gall1.jpg">
     </div>
@@ -302,7 +285,7 @@
        <img class="pic1" src="img/gall6.jpg">
   </div>
 </div>
-<div class="row">
+<div class="img_row">
   <div class="img_column" >
        <img class="pic1" src="img/gall7.jpg">
   </div>
@@ -313,12 +296,20 @@
         <img class="pic1" src="img/gall9.jpg">
   </div>
 </div>
-<div class="slidesfades">
-      <i class="fa fa-comments"></i>
-      <p>A meta description is an HTML element that provides a 
-      brief summary of a web page. A page's meta description tag is displayed
-      as part of the search snippet in a search engine results page (SERP)
 
+<!-- q -->
+
+
+
+
+
+<!-- Simple Static SLider using HTML and CSS-->
+<div class="slidesfades ">
+  <div class="row justify-content-center">
+      <i class="fa fa-comments fa-2x" style= "color:maroon"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, doloribus! Maxime reprehenderit
+         recusandae maiores commodi quidem! Veritatis repellendus temporibus modi in fugiat quidem perferendis, voluptatibus placeat ducimus necessitatibus dolore nihil!
    
       </p>
   
@@ -332,14 +323,18 @@
     </h3>
 
 </div>
-<!--- Fixed background -->
-<div class="contact">
+<!--- Footer  Section Using CSS Flex Box and Form-->
+<div id="contact" class="contact" >
     <h1>
       CONTACT US FOR MORE 
       </h1>
       <h3>
-      if you have rough set of mindand thus you can rule the world.Cheers!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quas deserunt distinctio beatae tenetur atque, veritatis
+       asperiores repudiandae dolor voluptates at eveniet amet optio ad nulla soluta fugiat officiis eum.
       </h3>
+      <div class="row justify-content-center">
+        <hr style="width:20%"> 
+      </div>
   </div>
   <div class="contact-container">
 
@@ -379,30 +374,12 @@
     <div class="gap1">
       <input placeholder="subject" class="input" type="text" id="fname" name="fname"><br>
     </div> 
-    <button class="message">
-      Send Message
-    </button>
-    
+    <div class="row justify-content-center">
+    <button type="button" class="btn btn-primary btn-lg"> Send </button>
+  </div>
+  </div>
     </form> 
   </div>
-
-<!--- Emoji Section -->
-
-  
-<!--- Meet the team -->
-
-
-<!--- Cards -->
-
-
-<!--- Two Column Section -->
-
-
-<!--- Connect -->
-
-
-<!--- Footer -->
-
 
 
 
@@ -411,29 +388,3 @@
 
 
 
-<!-- <div class="row welcome text-center">
-    <div class="col-12">
-        <h1 class="display-4">Built with Ease.</h1>
-    </div>
-    <hr>
-          <div class="col-12">
-            <p class="lead">Welcome to my Bootstrap 4 Website tutotial!
-                Bootstrap is a free and open-source front-end library with HTML 
-                and CSS based designs
-            </p>
-          </div>
-        </div> -->
-
-        <!-- 
-	<div class="col-xs-12 col-sm-12 col-md-9 col-xl-10">
-
-		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-			 to featured content or information.</p>
-
-	</div>
-
-	<div class="col-xs-12 col-sm-12 col-md-3 col-xl-2">
-
-		<a href="#"><button type="button" class="btn btn-outline-secondary"
-			btn-lg>Web Hosting</button></a>
-	</div>-->

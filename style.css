@@ -10,13 +10,26 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-
+/*---Media Queries --*/
 
 @media screen and (max-width:644px){
+  
   .work >p{
     text-align: center;
     padding: 2rem;
     color: lightgray;
+  }
+  .btn-group>button1 {
+    background-color: maroon; 
+    border: 1px solid maroon; 
+    color: white; /* White text */
+    padding: 10px 14px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    
+
+   
+    text-align: center;
   }
 } 
 @media screen and (max-width:630px){
@@ -25,7 +38,7 @@ html,body
     padding: 2rem;
     color: lightgray;
   }
-  .row{
+  .img_row{
     display: flex;
     flex-direction: column;
     image-resolution: 20px;
@@ -44,7 +57,17 @@ html,body
   .contact-container{
     display: flex;
     flex-direction: column;
+   
   }
+  .form
+{
+  /* border:1px solid red; */
+ 
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  gap: 20px;
+}
   .img{
     width: 100vw;
     height: 70vh;
@@ -52,7 +75,7 @@ html,body
   .summer{
     width: 30vw;
   }
-  .row{
+  .img_row{
     display: flex;
     flex-direction: column;
     image-resolution: 20px;
@@ -64,17 +87,18 @@ html,body
     width: 100vw ;
   }
   
+  
 }
 @media screen and (max-width: 400px) {
-  .img{
-    margin: 0%;
-    width: 30vw;
-    height: 50vh;
+  .img_row{
+    display: flex;
+    flex-direction: column;
+    image-resolution: 20px;
+    justify-content: center;
+    
     
   }
-  .buttons{
-    gap: 20px;
-  }
+  
 
   
 }
@@ -96,14 +120,9 @@ html,body
     gap: 0rem;
     flex-direction: column;
   }
-  .img{
-    width: 100vw;
-    height: 50vh;
-  }
-  .buttons{
-    gap: 20px;
-  }
-  .row{
+  
+ 
+  .img_row{
     display: flex;
     flex-direction: column;
     image-resolution: 20px;
@@ -114,17 +133,20 @@ html,body
   .pic1{
     width: 100vw ;
   }
-
+  .btn-primary{
+    background-color: #a85454 ;
+    border:1px solid #a85454 ;
+    border-radius: 30px;
+margin-top:1rem;
+width:135px;
+  }
 }
 @media screen and (max-width: 414px){
   /* *{
     border: 1px solid red;
   } */
-  .img{
-    width: 100vw;
-    height: 50vh;
-  }
-  .row{
+  
+  .img_row{
     display: flex;
     flex-direction: column;
     image-resolution: 20px;
@@ -135,6 +157,7 @@ html,body
   .pic1{
     width: 100vw ;
   }
+  
 }
 @media screen and (max-width: 349px){
   *{
@@ -157,18 +180,57 @@ html,body
   }
 
 }
-
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
+@media screen and (max-width: 768px){
+  
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+   
   }
-@media (max-width: 768px) {
+  .form
+  {
+  /* border:1px solid red; */
   
-}
-@media (max-width: 576px) {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  gap: 20px;
+  }
   
-}
+  }
+
+  @media screen and (min-width: 768px){
+    .card-title{
+      font-size: 1vw;
+      word-break: keep-all !important;
+    }
+    contact-container{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .form
+    {
+    /* border:1px solid red; */
+    
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    gap: 20px;
+    }
+    }
+    @media screen and (max-width:1750px){
+      .main-header{
+        display: flex;
+      }
+      .bar{
+        display: none;
+      }
+      .Header{
+        height: auto;
+      }
+    
+    }
 /*---- Nav Bar----*/
 
 * {
@@ -185,7 +247,9 @@ html,body
     background-repeat: no-repeat;
     background-image: linear-gradient(
         to bottom,
-        rgba(183, 149, 109, 0.702),
+        #e08991 ,
+        #d29764,
+       
         rgba(30, 30, 7, 0.852)),
         url("img/bg1.jpg");
         
@@ -216,20 +280,20 @@ html,body
    font-size:1.1em !important;
    color: white !important;
  }
- /*.nav-link > li > a:hover{
-    background-color:#FCC;
-}*/
+ 
 .navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
    
     color: #a85454 !important;
 }
-
-
+.butt>.btn-primary{
+  background-color: #daa521 ;
+}
 .btn-primary{
     background-color: #a85454 ;
     border:1px solid #a85454 ;
-    border-radius: 50px;
+    border-radius: 30px;
 margin-top:1rem;
+width:200x
   }
   .btn-primary:hover{
     background-color: #a76262;
@@ -237,22 +301,6 @@ margin-top:1rem;
   }
 
   
-  .crousal {
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    }
-    .crousal h2 {
-      font-size:500%;
-      text-transform:uppercase;
-      text-shadow: 1px 1px 15px #000;
-    }
-    .crousal p {
-      font-size:200%;
-      font-weight:500;
-      text-shadow: 1px 1px 10px #000;
-      padding-bottom:1rem;
-    }
   
     .welcome{
       width:75%;
@@ -280,30 +328,10 @@ margin-top:1rem;
    
     .button4 {border-radius: 20px;}
     
-    .all{
-      background-color: maroon;
-      color: white;
-      border-radius: 15px;
-      text-align: center;
-      width: 5%;
-      height: 30px;
-      font-size: 15px;
-      padding:-100px
-     
-    }
-    .summer{
-      
-        background-color: white;
-        color: black;
-        border-radius: 15px;
-        text-align: center;
-        width: 5%;
-        height: 30px;
-        font-size: 15px;
+    /* three column image section CSS*/
     
-    }
     .pic1{
-    
+      margin: 0%;
       width: 100%;
     }
     .img_row{
@@ -316,7 +344,7 @@ margin-top:1rem;
     }
     .img_column{
       float: left;
-      width: 33.3%;
+    
     }
   /* floats after the columns */
 .row:after {
@@ -342,23 +370,23 @@ figure {
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
+/* static SLider CSS*/
 .slidesfades {
   
   /* height: 50vh; */
    background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.92)),
-    url("img/bg1.jpg");
+    rgba(0, 0, 0, 0.92)) ,
+    url("img/bg1.jpg"); 
         
   max-width: 100vw;
-  color: black;
+  color: black !important;
   background-size: cover;
   background-repeat: none;
   margin-top: 10%;
@@ -398,21 +426,7 @@ figure {
   padding: 1px;
   font-family: sans-serif;
 }
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-
+/* Footer Section CSS*/
 .contact > h1 {
   justify-content: space-between;
   font-family: sans-serif;
@@ -430,7 +444,7 @@ figure {
 .contact-container {
   display: flex;
   justify-content:center;
-  gap: 15rem;
+  gap: 8rem;
   /* border: 1px solid red; */
   padding: 2rem;
   
@@ -441,6 +455,9 @@ figure {
   flex-direction: column;
   gap: 1rem;
 }
+
+
+
 .icon1{
   color: maroon;
   padding: 15px;
@@ -481,75 +498,188 @@ figure {
   /* border:1px solid red; */
   padding: 2rem;
   display: flex;
-  z-index: 1;
+ 
   flex-direction: column;
   gap: 20px;
 }
-
- 
-.message{
-  margin-top: 2vw;
-  background-color: maroon;
-  justify-content: space-evenly;
-  border: none;
-  width: 8vw;
-  height: 3vw;
-  font-size: auto;
-  color: #ffffff;
-  border-radius: 0.5vw;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 10rem;
-}
-
-  
  
 
-.footer > p {
-  font-size: small;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-.column {
-  float: left;
-  width: 33.3%;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content:"";
-  display: table;
-  clear: both;
-}
+ 
 .pic1{
   margin: 0%;
   width: 100%;
 }
 
-@media screen and (max-width:1750px){
-  .main-header{
-    display: flex;
-  }
-  .bar{
-    display: none;
-  }
-  .Header{
-    height: auto;
-  }
 
-}
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
 }
 
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.div_center {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.work {
+  justify-content: center;
+  text-align: center;
+  color: lightgray;
+}
+/* we are best at work */
+.work > h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+  padding-top: 4rem;
+  color: maroon;
+  text-align: center;
+}
+/* best at work para */
+.work > p {
+  font-family: sans-serif;
+  padding-top: 15px;
+  color: rgb(184, 177, 177);
+ 
+}
+.conquer{
+  margin-top: 5%;
+  display: flex ;
+  flex-direction: row;
+  justify-content: center;
+  
+}
 
 
 
+/* conquer pic */
+.img {
+  width: 20vw;
 
+  margin-left: 10%;
+  padding: 30px;
+}
+
+
+/* check your recent work */
+.recent > h2 {
+  text-align: center;
+  color: maroon;
+  font-family: sans-serif;
+  padding-top: 10%;
+  padding-bottom: 1%;
+}
+
+/* meta line para */
+.recent > p {
+  font-family: sans-serif;
+  text-align: center;
+  padding-block-end: 2%;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  width: 95%;
+  height: 10px;
+  padding: 40px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.summer{
+  background-color: white;
+  width: 10%;
+  border: none;
+  font-size: 20px;
+
+}
+
+.all{
+  background-color: maroon;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  width: 5%;
+  height: 40px;
+  font-size: 20px;
+  
+ 
+}
+.card-body>i>fa{
+padding: 5%;
+font-size: 30px;
+color: #daa521;
+}
+.card-body>h4{
+  font-weight: bold;
+}
+.h2{
+  font-weight: bold;
+}
+
+.card-body>hr {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .color>p{
+    font-size: 30px;
+    color: #daa521;
+    }
+    .middle>.work>hr{
+      width:20%;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-group>button1 {
+      background-color: maroon; 
+      border: 1px solid maroon; 
+      color: white; /* White text */
+      padding: 10px 12px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      border-radius: 20px;
+width:60px;
+     
+      text-align: center;
+    }
+    .btn-group button {
+      color:black;
+      padding: 10px 12px; /* Some padding */
+     
+      cursor: pointer; /* Pointer/hand icon */
+ 
+  
+      border: none;
+      background-color:transparent;
+   outline:none;
+      
+     
+      text-align: center;
+    }
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
