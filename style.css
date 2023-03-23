@@ -127,7 +127,7 @@ html,body
     height: 300px;
   }
   .header-centre >h1{
-      font-size: 20px;
+      font-size: 10px;
   }
   .header-centre >button{
     width: 100px;
@@ -276,9 +276,10 @@ width:135px;
         rgba(254,161, 71)),
         url("img/bg1.jpg");
         height:48%;
-        
+        height: 50vh;   
+        padding:14px;
     color: white;
-    padding: 10px;
+   
     margin: 0%;
     max-width: 100 vw;
     background-color: white;
@@ -313,7 +314,10 @@ width:135px;
 .navbar-light .navbar-nav .nav-link.active {
   color: #daa521  !important;;
 }
-
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 .butt>.btn-primary{
   background-color: #daa521 ;
   border-radius: 0px;
