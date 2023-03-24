@@ -180,9 +180,7 @@ width:135px;
   
 }
 @media screen and (max-width: 349px){
-  *{
-    border: 1px solid red;
-  }
+
   .Header{
     width: 20rem;
   }
@@ -575,7 +573,7 @@ figure {
 /* we are best at work */
 .work > h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+
   font-size: 25px;
   padding-top: 4rem;
   color: maroon;
@@ -598,7 +596,6 @@ figure {
 }
 
 
-
 /* conquer pic */
 .img {
   width: 20vw;
@@ -606,8 +603,20 @@ figure {
   margin-left: 10%;
   padding: 30px;
 }
-
-
+/* DFooter Section*/
+.footer{
+  padding-top: 10px;
+  width: 100%;
+  
+  padding-bottom: 0px; ;
+}
+.footer > p {
+  font-size: small;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 /* check your recent work */
 .recent > h2 {
   text-align: center;
@@ -720,6 +729,8 @@ width:60px;
     .btn-group button:not(:last-child) {
       border-right: none; /* Prevent double borders */
     }
+
+   
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
